@@ -1,0 +1,7 @@
+1|Kevin Bacon
+100|Alice
+200|Bob
+300|Charlie
+400|Dartmouth (Earl thereof)
+500|Nobody
+600|Nobody's Friend

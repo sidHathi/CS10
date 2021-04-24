@@ -1,0 +1,16 @@
+Region Growing:
+
+
+Region growing is an algorithm that attempts to find regions of a certain color by grouping large adjacent areas of pixels that match the color well. I implemented it by looping over the pixels in the image to which the algorithm was being applied and looking for pixels that matched the target color within a certain margin of error. For each of these pixels, a new list of pixels was created to denote a new region (at first this list only contained the initial pixel). I then examined the initial pixel’s neighbors. If any of the neighbors matched the target color, they were added to the region, and the process was repeated on their neighbors. After there were no more neighbors to apply the algorithm on, the region was evaluated. If it was big enough, it was added to the global list of regions. In the case of the static image color grouping, all of these regions were overlaid onto canvas' image. For the object recognition code in the webcam, however, the largest of these regions was the only one to be displayed.
+
+
+Strengths:
+
+
+Region growing is effective at finding regions of similar color. It works so long as the regions are uniform, and it is relatively simple to implement.
+
+
+Weaknesses:
+
+
+Region growing is slow. It requires looping over every pixel, and I’m confident there are faster ways to complete the same task. For single static images, it performs at acceptable speeds, but for streamed webcam footage, it causes noticeable lag. It is also inaccurate. Depending on fluctuations in lighting and angle, it can get confused and mark the wrong regions due to changes in color hue and saturation. It also requires manual setup to figure out the optimal min region and min color difference variables for a given scenario - this requires time and work from the user. Region growing is also not ideal for object tracking as it simply fixes onto the largest region of color rather than the actual color patterns of the object you want to track. Finally, region growing is easy to fool. If you have two objects of similar color and size in the frame it will have a tough time figuring out the difference between them.

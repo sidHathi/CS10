@@ -1,0 +1,31 @@
+/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63674:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/siddharthhathi/OneDrive/Everything/Documents/School/dart/21W/cs10/libs/javacv.jar:/Users/siddharthhathi/OneDrive/Everything/Documents/School/dart/21W/cs10/libs/json-simple-1.1.1.jar:/Users/siddharthhathi/OneDrive/Everything/Documents/School/dart/21W/cs10/libs/net-datastructures-4-0.jar:/Users/siddharthhathi/OneDrive/Everything/Documents/School/dart/21W/cs10/libs/openblas-macosx-x86_64.jar:/Users/siddharthhathi/OneDrive/Everything/Documents/School/dart/21W/cs10/libs/opencv-macosx-x86_64.jar:/Users/siddharthhathi/OneDrive/Everything/Documents/School/dart/21W/cs10/libs/opencv.jar:/Users/siddharthhathi/OneDrive/Everything/Documents/School/dart/21W/cs10/out/production/20W GraphLibTest
+Vertices: [A, B, C, D, E, F, G, H]
+Out edges: {A={B=true}, B={D=true}, C={B=true}, D={A=true, C=true}, E={A=true}, F={A=true}, G={C=true}, H={C=true}}
+by in degree:[A, C, B, D, E, F, G, H]
+some random walks from A:
+[A, B, D]
+[A, B, D, A, B, D, A, B, D, A, B, D]
+[A, B, D, A, B, D, C, B, D, A, B, D, C, B, D, C, B, D, A, B, D, A]
+[A, B, D, A, B, D, C, B, D, A, B, D, C, B, D, A, B, D, C]
+[A]
+[A, B, D, A, B, D, C]
+[A]
+[A, B, D, A, B, D, C, B, D, C, B, D, C, B, D, C, B, D, A, B, D, A, B, D, C, B, D, A, B]
+[A, B, D, C, B, D, C, B, D]
+[A, B, D, C, B, D, C, B, D, C, B, D, C, B, D, C, B, D, C, B, D, C]
+walking...
+by walk frequency:[B, D, C, A, E, F, G, H]
+Vertices: [A, B, C, D, E, F, G, H]
+Out edges: {A={B=true}, B={D=true}, C={B=true}, D={A=true, C=true}, E={A=true}, F={A=true}, G={C=true}, H={C=true}}
+A:[D]
+B:[A, C]
+C:[D]
+D:[B]
+E:[B]
+F:[B]
+G:[B]
+H:[B]
+Vertices: [A, B, C, D, E, F, G, H]
+Out edges: {A={D=null, E=null, F=null}, B={A=true, D=true}, C={B=true}, D={C=true}, E={}, F={}, G={C=true}, H={C=true}}
+
+Process finished with exit code 0

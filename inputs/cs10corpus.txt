@@ -1,0 +1,16 @@
+! CS 10 Corpus
+! Download this (or copy it) as a plain text file to load it into Java via POSLib.loadTaggedSentences
+ 
+! CBK example sentences for PS writeup:
+I/PRO fish/V
+Will/NP eats/V the/DET fish/N
+Will/MOD you/PRO cook/V the/DET fish/N
+One/DET cook/N uses/VD a/DET saw/N
+A/DET saw/N has/V many/DET uses/N
+You/PRO saw/VD me/PRO color/V a/DET fish/N
+Jobs/NP wore/VD one/DET color/N
+The/DET jobs/N were/VD mine/PRO
+The/DET mine/N has/V many/DET fish/N
+You/PRO can/MOD cook/V many/PRO
+
+! Add your sentences below

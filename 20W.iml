@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/SA0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BlobStuff" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ImageProcessing" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recitation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ListStuff" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recitation2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Video" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Webcam" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10-info-retreival" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BinaryTreeRecitation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Midterm 1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Order" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/priority" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/graphs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/heap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Midterm 2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Midterm2Practice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fa" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SA8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS6Recitation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PS6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FINAL" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

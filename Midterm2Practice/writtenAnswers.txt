@@ -1,0 +1,48 @@
+
+1. We looked at separate chaining and linear probing for implementing hash tables. What are the relative advantages and disadvantages of each?
+
+Chaining is less memory efficent because linked lists aren't stored continguously like arrays. Paritally as a result of this, chaining can become
+significantly slower than constant time as collisions increase. Looking up items stored in long linked list can require iterating over each element.
+However, chaining avoids runs which are a persistent issue of linear probing. As more collisions occur in a single place, surrounding entries are
+pushed out of their correct indices and the list loses its order. Linear probing can also be very slow with lots of collisions.
+
+2. Make up a small example of a set of Strings and a hash function that yield collisions, and show what happens in both a “separate chaining”
+hash table and an “open addressing” hash table in your scenario.
+
+// Hash function -> used in some class MyHashSet
+public int hash(String  input){
+    return input.length() % 5;
+}
+
+public static void main(String[] args){
+    Set<String> customHashSet = new MyHashSet<String>();
+    customHashSet.add("asdgf");
+    customHashSet.add("");
+}
+
+in seperate chaining hash table each element in the hash table is a linked list. In this case "asdgf" and "" would be linked and stored at index 0
+
+in open addressing, some rule (i.e. linear chaining) is used in event of collision. Say this rule is to hash the string appended to the string "yos"
+in this scenario, asdgf would inhabit index 0 and "" would inhabit index 3
+
+8. Suppose we have a box of the following kind: when you open it, you will find some cash lying and, possibly, some more boxes. When you open any of these boxes, you will similarly find some cash and some more (possibly zero) boxes. The problem that we want to solve is stated as follows: given a box b, count all of the cash in b and in the boxes nested inside b. To capture this problem, I have defined the Box class below. The instance variable cash is the money that you will readily see up on opening this box, and the instance variable boxes is a reference to the array of boxes that are readily seen up on opening this box (boxes is null if this box does not contain any boxes).
+   public class Box {
+      public int cash;   // dollars readily seen up on opening this box
+      public Box [] boxes;   // sequence of boxes readily seen up on opening this box
+}
+Now consider the following method:
+   // returns the total amount in box b and in all of the boxes nested within b
+   public int wealthInside(Box b)
+Implement the above method using recursion. You are not allowed to write or use any other methods (so, no helper methods are allowed). It is important that your method be correct, efficient, compre- hensible, and elegant. (Use the other side of this sheet if you need more space.)
+
+
+public int totalCash(){
+    if (boxes.count < 1){
+        return cash;
+    }
+    totalCash = cash;
+    for (Box b: boxes){
+    totalCash += b.totalCash();
+    }
+    return totalCash;
+}

@@ -1,0 +1,49 @@
+Graphs:
+Overarching Graph:
+Vertices: [Bob, Dartmouth, Alice, Charlie, Nobody, Nobody's Friend, Kevin Bacon]
+Out edges: {Bob={Alice=[A Movie], Charlie=[C Movie], Kevin Bacon=[A Movie]}, Dartmouth={Charlie=[B Movie]}, Alice={Bob=[A Movie], Charlie=[D Movie], Kevin Bacon=[A Movie, E Movie]}, Charlie={Bob=[C Movie], Dartmouth=[B Movie], Alice=[D Movie]}, Nobody={Nobody's Friend=[F Movie]}, Nobody's Friend={Nobody=[F Movie]}, Kevin Bacon={Bob=[A Movie], Alice=[A Movie, E Movie]}}
+
+Search Tree:
+Vertices: [Bob, Dartmouth, Alice, Charlie, Kevin Bacon]
+Out edges: {Bob={Kevin Bacon=[A Movie]}, Dartmouth={Charlie=[B Movie]}, Alice={Kevin Bacon=[A Movie, E Movie]}, Charlie={Bob=[C Movie]}, Kevin Bacon={}}
+
+Sample Game Run:
+Commands:
+c <#>: list top (positive number) or bottom (negative) <#> centers of the universe, sorted by average separation
+d <low> <high>: list actors sorted by degree, with degree between low and high
+i: list actors with infinite separation from the current center
+p <name>: find path from <name> to current center of the universe
+s <low> <high>: list actors sorted by non-infinite separation from the current center, with separation between low and high
+u <name>: make <name> the center of the universe
+q: quit game
+
+Kevin Bacon is now the center of the acting universe, connected to 5/7 actors with average separation 1.4
+Kevin Bacon game >
+u Alice
+Alice is now the center of the acting universe, connected to 5/7 actors with average separation 1.0
+Kevin Bacon game >
+p Kevin Bacon
+Kevin Bacon's number is 1
+Kevin Bacon appeared in [A movie, E movie] with Alice
+Kevin Bacon game >
+p asd;lfakj
+Invalid input
+Kevin Bacon game >
+c 1
+[Nobody]
+Kevin Bacon game >
+c 2
+[Nobody, Nobody's Friend]
+Kevin Bacon game >
+d 0 10
+[Nobody, Nobody's Friend, Dartmouth (Earl thereof), Kevin Bacon, Charlie, Bob, Alice]
+Kevin Bacon game >
+i
+[Nobody, Nobody's Friend]
+Kevin Bacon game >
+s 0 10
+[Alice, Bob, Kevin Bacon, Charlie, Dartmouth (Earl thereof)]
+Kevin Bacon game >
+q
+
+Process finished with exit code 0
